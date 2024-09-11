@@ -1,86 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Komputery</title>
 </head>
 <body>
-    <section id="blok_1">
+    <section class="container">
+        <header class="banner">
+            <img src="animacja.gif" alt="Pogotowie komputerowe" style="width: 100%; height: 200px;">
+        </header>
+        <nav class="menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <div class="main-blocks">
+            <section class="block"></section>
+           
+<section class="block">
+    <h2>Kontakt</h2>
+    <table>
+        <tr>
+            <td>Imię:</td>
+            <td><input type="text" name="imie"></td>
+        </tr>
+        <tr>
+            <td>Nazwisko:</td>
+            <td><input type="text" name="nazwisko"></td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Zgłoszenie:</td>
+            <td>
+                <select name="usluga">
+                    <option value="naprawa komputerów">naprawa komputerów</option>
+                    <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                    <option value="wirusy">wirusy</option>
+                    <option value="konfiguracja LAN">konfiguracja LAN</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="wyslij_kopie" checked> Wyślij kopię wiadomości</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="akcja()">Wyślij</button>
+                <button type="button">Czyść</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <p id="wynik"></p> 
+</section>
 
-    </section>
-
-    <section id="blok_2">
-        <h3>Kontakt</h3>
-        <table >
-            <tr>
-                <th>
-                    Imię
-                </th>
-                <th>
-                    
-                </th>
-            </tr>
-
-            <tr>
-                <th>
-                    Nazwisko
-                </th>
-                <th>
-                    
-                </th>
-            </tr>
-            
-            <tr>
-                <th>
-                    E-mail
-                </th>
-                <th>
-                    <input type="email">
-                </th>
-            </tr>
-            
-            <tr>
-                <th>
-                    Zgłoszenie
-                </th>
-                <th>
-                    <select id="wybor">
-                        <option value="op1">naprawa komputerów</option>
-                        <option value="op2">odzyskiwanie danych</option>
-                        <option value="op3">wirusy</option>
-                        <option value="op4">konfiguracja LAN</option>
-                    </select>
-
-                </th>
-            </tr>
-            
-            <tr>
-                <th>
-                    
-                </th>
-                <th>
-                    <input type="checkbox" name="wyslij_kopie" value="tak" checked>
-                    Wyślij kopię wiadomości
-                </th>
-            </tr>
-            
-            <tr>
-                <th>
-                    
-                </th>
-                <th>
-                    <button>Czyść</button>
-                    <button onclick="skrypt()">Wyślij</button>
-                </th>
-            </tr>
-        </table>
-        <hr>
-    </section>
-
-    <section id="blok_3">
-
+            <section class="block"></section>
+        </div>
+        <footer class="footer">
+            <p>Autor: <em>Numer zdającego</em></p>
+        </footer>
     </section>
 </body>
 </html>
+<script>
+
+
